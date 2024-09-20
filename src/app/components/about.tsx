@@ -16,7 +16,6 @@ export default function About({number}:{number:number}) {
                        
                     {number !=0 ? `${description.substring(0, number)}...` : description}
 
-
                     </p>
 
 
