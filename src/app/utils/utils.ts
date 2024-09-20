@@ -34,9 +34,9 @@ export function generateBoxes(setBoxes: { (value: SetStateAction<Box[]>): void; 
   }
   
   export interface Params {
-    projectId: any;
- 
+    projectId: string | number; 
   }
+  
   export interface Project {
     id: number;
     name: string;

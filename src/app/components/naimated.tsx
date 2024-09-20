@@ -7,8 +7,9 @@ export default function AnimatedBackground() {
   const [boxes, setBoxes] = useState<Box[]>([]);
 
   useEffect(() => {
-    generateBoxes(setBoxes,colors);
-  }, []);
+    generateBoxes(setBoxes, colors);
+  }, [colors]);
+  
 
   return (
     <div>

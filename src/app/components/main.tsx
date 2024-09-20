@@ -14,7 +14,7 @@ export default function Main() {
         <>
 
             <main>
-            <div style={{paddingLeft:"50px",paddingRight:"50px"}}>
+            <div style={{paddingLeft:"40px",paddingRight:"40px"}}>
                 <div className="main flex justify-start">
 
                     <div
@@ -26,12 +26,12 @@ export default function Main() {
 
                     <div className="outer p-5">
                         <h1 className="text-2xl p-5">
-                            <span className="text-animate">Hello!</span>{' '}
-                            <span className="text-animate">I'm a Senior Software Engineer with extensive experience in developing robust solutions.</span>{' '}
+                            <span className="text-animate">Hello!</span>
+                            <span className="text-animate">I&apos;m a Senior Software Engineer with extensive experience in developing robust solutions.</span><br />
                             <span className="text-animate">I specialize in building tailored software.</span>
                         </h1>
                         <h3 className="text-1xl p-5">
-                            Reach out to me for any project or consultation—I'm always open to discussing new opportunities.
+                            Reach out to me for any project or consultation—I&apos;m always open to discussing new opportunities.
                             <Link className="text-gray-500" href="mailto:chiorlujack@gmail.com">
                                 &nbsp;chiorlujack@gmail.com
                             </Link>.
