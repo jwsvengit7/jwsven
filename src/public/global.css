@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+body{
+  margin:0px
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #040404;
+    --foreground: #ededed;
+  }
+}
+@media (max-width:700px) {
+  /* header{
+    display:none;
+  } */
+
+
+  .icond{
+    width:90% !important;
+    height: 500px !important;
+  
+  }
+
+  .icond img{
+    width:50px !important;
+    padding: 0px !important;
+  }
+  .main{
+    flex-direction: column;
+
+  }
+ .bg-image{
+    width: 85% !important;
+    margin: 5px;
+  }
+  .outer, .outer2{
+    width: 90% !important;
+    padding: 0px !important;
+  }
+  .section-two{
+    flex-direction: column;
+    padding: 0px !important;
+  }
+  .section-t{
+    padding: 0px !important;
+  }
+  .box{
+    padding: 0px !important;
+    width: 85% !important;
+    margin: 10px;
+  }
+  header{
+    width: 90% !important;
+
+    height: auto !important;
+    flex-direction: column;
+  }
+  .icon-div{
+    padding: 0px !important;
+  }
+  nav{
+    width: 95%;
+    padding: 10px !important;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+  width:90%;
+  height:50px;
+  padding: 10px;
+
+}
+header h2{
+  color:#0a0a0a;
+  font-weight: bold;
+}
+.icond,.icond2{
+  height: 500px;
+}
+.main{
+  width: 100%;
+  height: auto;
+}
+.bg-image{
+  width:30%;
+  height: 450px;
+  background-image: url(images/jwsven.jpeg);
+  border-radius: 40px;
+}
+.bg-image2{
+  width:30%;
+  height: 400px;
+  background-image: url(images/jack.jpeg);
+  border-radius: 40px;
+}
+.bg-image-r{
+  width:100%;
+  height: 100%;
+background: rgba(0, 0, 0, 0.4);
+  border-radius: 40px;
+
+}
+.outer{
+  width: 50%;
+  height: 600px;
+}
+.outer2{
+  width: 65%;
+  height: 500px;
+  flex-wrap: wrap;
+  
+}
+.section-two{
+  width:100%;
+  height:auto;
+  
+  flex-wrap: wrap;
+}
+.round{
+  border-radius: 12px;
+}
+.box{
+  width:32%;
+  margin-bottom: 30px;
+  height: 550px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px rgba(118, 117, 117, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition-duration: 0.5s;
+  border: 1px solid #262525;
+
+  
+
+}
+.box:hover{
+    width: 34%;
+    height: 600px;
+    border: 2px solid #ccc;
+
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text-animate {
+  animation: fadeIn 1s ease-out forwards;
+  animation-iteration-count: infinite;
+  color:white;
+  animation-delay: 0.2s;
+}
+
+.text-animate:nth-child(1) {
+  
+  color:rgb(67, 45, 5)
+}
+
+.text-animate:nth-child(2) {
+  animation-delay: 0.4s;
+
+
+
+}
+
+.text-animate:nth-child(3) {
+  animation-delay: 0.6s;
+
+
+
+}
+
+/* Add more nth-child rules if you have more lines */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
