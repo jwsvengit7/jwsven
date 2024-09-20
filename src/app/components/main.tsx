@@ -31,19 +31,19 @@ export default function Main() {
                             <span className="text-animate">I&apos;m a Senior Software Engineer with extensive experience in developing robust solutions.</span><br />
                             <span className="text-animate">I specialize in building tailored software.</span>
                         </h1>
-                        <h3 className="text-1xl p-5">
+                        <h3 className="text-1xl p-5 text-gray-600">
                             Reach out to me for any project or consultation—I&apos;m always open to discussing new opportunities.
                             <Link className="text-gray-500" href="mailto:chiorlujack@gmail.com">
                                 &nbsp;chiorlujack@gmail.com
                             </Link>.
                         </h3>
 
-                        <h3 className="text-1xl p-5">I have had the pleasure of working with several esteemed companies throughout my career:</h3>
+                        <h3 className="text-1xl p-5 text-gray-600">I have had the pleasure of working with several esteemed companies throughout my career:</h3>
 
                         <div className="p-5 flex justify-between" style={{ width: "60%" }}>
-                            <Image src={EasyVolt} alt="EasyVolt logo" width={80} height={80} />
-                            <Image src={Access} alt="Access logo" width={80} height={80} />
-                            <Image src={Decagon} alt="Decagon logo" width={80} height={80} />
+                            <Image className="p-2" src={EasyVolt} alt="EasyVolt logo" width={80} height={80} />
+                            <Image className="p-2" src={Access} alt="Access logo" width={80} height={80} />
+                            <Image className="p-2" src={Decagon} alt="Decagon logo" width={80} height={80} />
                         </div>
                     </div>
                 </div>
