@@ -11,7 +11,7 @@ export function generateBoxes(setBoxes: { (value: SetStateAction<Box[]>): void; 
         const randomColor = colors[Math.floor(Math.random() * colors.length)];
         const randomX = Math.random() * window.innerWidth;
         const randomY = Math.random() * window.innerHeight;
-        const delay = Math.random() * 3;
+        const delay = Math.random() * 5;
 
         boxesArray.push({
           color: randomColor,

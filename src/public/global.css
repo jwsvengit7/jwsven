@@ -58,7 +58,7 @@ body{
   }
   .box{
     padding: 0px !important;
-    width: 85% !important;
+    width: 95% !important;
     margin: 10px;
   }
   header{
@@ -109,7 +109,7 @@ header h2{
 }
 .bg-image2{
   width:30%;
-  height: 400px;
+  height: 450px;
   background-image: url(images/jack.jpeg);
   border-radius: 40px;
 }
@@ -118,7 +118,10 @@ header h2{
   height: 100%;
 background: rgba(0, 0, 0, 0.4);
   border-radius: 40px;
-
+}
+.pad{
+  padding-left: 10px !important;
+  padding-right: 10px !important;
 }
 .outer{
   width: 50%;

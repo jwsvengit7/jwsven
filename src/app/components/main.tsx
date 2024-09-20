@@ -8,13 +8,14 @@ import Section from "./section-two";
 import { Provider } from "react-redux";
 import { store } from "../api/services/store";
 import About from "./about";
+import ContactForm from "./contact";
 export default function Main() {
 
     return (
         <>
 
             <main>
-            <div style={{paddingLeft:"40px",paddingRight:"40px"}}>
+            <div style={{paddingLeft:"40px",paddingRight:"40px"}} className="pad">
                 <div className="main flex justify-start">
 
                     <div
@@ -158,7 +159,10 @@ export default function Main() {
 
 
                 </div>
-            <About />
+            <About number={1000} />
+            <ContactForm />
+
+
             </main>
         </>
     );

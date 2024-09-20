@@ -1,27 +1,22 @@
-export default function About() {
+import { description } from "../utils/app_utils";
+
+export default function About({number}:{number:number}) {
     return (
         <>
             <div style={{ height: "50px" }}></div>
-            <center><h1 className="text-5xl">About Me</h1></center>
+            <center><h2 className="text-3xl font-extrabold text-gray-300">About Me</h2></center>
 
             <div style={{ height: "40px" }}></div>
-            <div style={{paddingLeft:"40px",paddingRight:"40px"}}>
-            <div className="main flex justify-start">
+            <div style={{paddingLeft:"40px",paddingRight:"40px"}} className="pad">
+            <div className="main flex justify-start items-center">
 
 
                 <div className="outer2 p-5">
-                    <p className="p-2" >
-                        I&apos;m Jackson, a Senior Software Engineer and passionate developer with a focus on cloud technologies and Software Engineer.
+                    <p className="p-2 mt-4 text-lg text-gray-600" >
+                       
+                    {number !=0 ? `${description.substring(0, number)}...` : description}
 
-                        🔭 I&apos;m currently working on a cutting-edge Flutter Mobile app, leveraging the power of cloud computing.
-                        💬 Ask me about cloud architecture, serverless computing, microservices, and anything related to web development!
-                        📫 How to reach me: chiorlujack@gmail.com
-                        About Me
-                        I have a strong background in cloud computing and extensive experience in architecting, deploying, and managing cloud-based solutions. As a Senior Software Engineer, I am proficient in various cloud platforms, including AWS, Azure, and Google Cloud, and I thrive on designing scalable and cost-effective cloud architectures. I enjoy collaborating with cross-functional teams, mentoring junior developers, and driving continuous improvement within the organization.
 
-                        ⚡ Fun fact: I&apos;m a Tech enthusiast and enjoy exploring specialty in software engineering company around the world!
-
-                        Let&apos;s connect and discuss exciting about projects or anything related to web/app development. Feel free to reach out to me if you&apos;re looking for a Senior Frontend/backend/cloud expert or simply want to geek out about the latest tech trends!
                     </p>
 
 
