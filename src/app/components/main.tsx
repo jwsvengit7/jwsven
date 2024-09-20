@@ -14,6 +14,7 @@ export default function Main() {
         <>
 
             <main>
+            <div style={{paddingLeft:"50px",paddingRight:"50px"}}>
                 <div className="main flex justify-start">
 
                     <div
@@ -45,10 +46,13 @@ export default function Main() {
                         </div>
                     </div>
                 </div>
+                </div>
+       
                 <Provider store={store}>
                     <Section />
                 </Provider>
 
+       
 
 
                {/* <p className="te">Technologies</p> */}
@@ -108,7 +112,7 @@ export default function Main() {
   />
   <Image
     className="absolute p-3 rounded-full"
-    src={JAVA}
+    src={TS}
     alt="Planet 6"
     width={80}
     height={80}
@@ -154,7 +158,7 @@ export default function Main() {
 
 
                 </div>
-            {/* <About /> */}
+            <About />
             </main>
         </>
     );

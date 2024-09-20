@@ -7,7 +7,8 @@ import { fetchProjects } from "../api/services/projectsSlice";
 import { Project, dummyProjects } from "../utils/utils";
 export default function Section() {
     const dispatch: AppDispatch = useDispatch();
-    let { projects, loading, error } = useSelector((state: RootState) => state.projects);
+    const {  loading, error } = useSelector((state: RootState) => state.projects);
+    let {projects} = useSelector((state: RootState) => state.projects);
 
     useEffect(() => {
         dispatch(fetchProjects());

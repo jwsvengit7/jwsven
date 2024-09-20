@@ -1,8 +1,10 @@
 "use client"
 
+import { StaticImageData } from "next/image";
 import { D, SCREEN, SCREEN1 } from "./app_utils";
+import { SetStateAction } from "react";
 
-export function generateBoxes(setBoxes:any,colors:string[]) {
+export function generateBoxes(setBoxes: { (value: SetStateAction<Box[]>): void; (arg0: Box[]): void; },colors:string[]) {
     if (typeof window !== "undefined") { 
       const boxesArray: Box[] = [];
       for (let i = 0; i < 30; i++) {
@@ -39,7 +41,7 @@ export function generateBoxes(setBoxes:any,colors:string[]) {
     id: number;
     name: string;
     description: string;
-    imageUrl: any;
+    imageUrl: StaticImageData;
     date?: string;
     status?: string;
     link?: string;
