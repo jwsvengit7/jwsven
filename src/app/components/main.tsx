@@ -16,7 +16,7 @@ export default function Main() {
 
             <main>
             <div style={{paddingLeft:"40px",paddingRight:"40px"}} className="pad">
-                <div className="main flex justify-start">
+                <div className="main flex justify-center">
 
                     <div
                         className="bg-image"
